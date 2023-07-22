@@ -4,9 +4,16 @@ import { BsFillCartFill,BsFillSaveFill } from 'react-icons/bs';
 import {TbTruckDelivery} from 'react-icons/tb'
 import {FaUserFriends, FaWallet} from 'react-icons/fa'
 import {MdFavorite, MdHelp} from 'react-icons/md'
+import Createaccount from './Createaccount';
+import {Link} from "react-router-dom"
+import Login from './Login';
+import {RiServiceLine} from 'react-icons/ri'
+
+
 
 const Navbar = () => {
 const [nav, setNav] = useState(false)
+const[activeNav,setActiveNav]=useState('#');
 
   return (
     <div className='max-w-[1640px] mx-auto flex justify-between items-center p-4'>
@@ -33,6 +40,11 @@ const [nav, setNav] = useState(false)
           placeholder='Search foods'
         />
       </div>
+      <div className='hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]'>
+          {/* <p className='bg-black text-white rounded-full p-2'> </p> */}
+          <a href="#Createaccount"onClick={()=> setActiveNav('#Createaccount')} className={activeNav==='#Createaccount' ? 'active':'Navbar'}><RiServiceLine/></a>
+          <p className='p-2'>Login</p>
+        </div>
       {/* Cart button */}
       <button className='bg-black text-white hidden md:flex items-center py-2 rounded-full'>
         <BsFillCartFill size={20} className='mr-2' /> Cart
