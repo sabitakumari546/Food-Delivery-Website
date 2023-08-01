@@ -41,9 +41,9 @@ const[activeNav,setActiveNav]=useState('#');
         />
       </div>
       <div className='hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]'>
-          {/* <p className='bg-black text-white rounded-full p-2'> </p> */}
-          <a href="#Createaccount"onClick={()=> setActiveNav('#Createaccount')} className={activeNav==='#Createaccount' ? 'active':'Navbar'}><RiServiceLine/></a>
-          <p className='p-2'>Login</p>
+          <p className='bg-black text-white rounded-full p-2'> SignUp </p>
+
+          <p className='p-2'>LogIn</p>
         </div>
       {/* Cart button */}
       <button className='bg-black text-white hidden md:flex items-center py-2 rounded-full'>
