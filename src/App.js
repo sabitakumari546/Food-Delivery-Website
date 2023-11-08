@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route,Switch } from 'react-router-dom'
+
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import HeadlineCards from './components/HeadlineCards'
@@ -14,10 +14,7 @@ function App() {
   return (
     <div>
         <Navbar />
-        {/* <Switch>
-          <Route path='/Login' Component={Login}/>
-          <Route path='/Createaccount' Component={Createaccount}/>
-        </Switch> */}
+       
         <Hero />
         <HeadlineCards />
         <Food />
